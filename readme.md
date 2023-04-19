@@ -24,3 +24,29 @@ COMMANDS:
 
     alien list
 ```
+
+## Requirements
+
+To ensure alien runs smoothly, ensure you have the latest versions of the following applications:
+- zsh
+- vim
+
+## installation
+
+- clone the git repository 
+
+```
+git clone git@github.com:Radish4649/alien.git
+```
+
+- run the installation script
+
+```
+./alien-install.sh
+```
+
+- verify the installation is successful
+
+```
+alien help
+```
