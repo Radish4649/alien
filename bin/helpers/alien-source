@@ -1,0 +1,14 @@
+#!/usr/bin/zsh
+FUNCTION_DIRECTORY="$HOME/.alien/functions"
+
+[[ $ZSH_EVAL_CONTEXT =~ :file$ ]] && FILE_WAS_SOURCED="true"
+
+if [[ -z $FILE_WAS_SOURCED ]]; then
+    echo "This command cannot be run in a subshell. Please run 'source ./alien-source' instead."
+    echo "Aborting."
+    exit 1
+fi
+
+for FILE in $(ls -1A $FUNCTION_DIRECTORY); do
+    source "$FUNCTION_DIRECTORY/$FILE"
+done

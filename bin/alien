@@ -1,0 +1,35 @@
+#!/usr/bin/zsh
+# -------------------
+#   HELP
+# -------------------
+help() {
+    cat $HOME/.alien/bin/helpers/alien-help
+}
+
+# -------------------
+#   VARIABLES
+# -------------------
+export FUNCTION_DIRECTORY="$HOME/.alien/functions"
+export HERE=$(exec 2>/dev/null;cd -- $(dirname "$0"); unset PWD; /usr/bin/pwd || /bin/pwd || pwd)
+
+CMD_LIST=("cat" "delete" "edit" "list" "new")
+
+
+# -------------------
+#   COMMAND SETTING
+# -------------------
+if [[ $1 == "help" && " ${CMD_LIST[*]} " =~ " $2 " ]]; then
+    /usr/bin/zsh "$HERE/cmd/$2.sh" "help"
+    exit 0
+elif [[ ! " ${CMD_LIST[*]} " =~ " $1 " ]]; then
+    help && exit 1
+fi
+
+COMMAND=$1
+shift
+
+# -------------------
+#   COMMAND
+# -------------------
+
+/usr/bin/zsh "$HERE/cmd/$COMMAND.sh" "$@"
