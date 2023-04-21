@@ -11,7 +11,7 @@ alien: A command line tool for zsh functions 👽
 
 VERSION:
     
-    v0.1.0
+    v0.2.0
 
 COMMANDS:
 
