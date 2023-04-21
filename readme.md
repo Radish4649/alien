@@ -19,6 +19,7 @@ COMMANDS:
     alien delete <function>
     alien edit <function>
     alien new <function>
+    alien move <function> <new_name>
 
     alien help <command>
 
