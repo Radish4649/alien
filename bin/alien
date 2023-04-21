@@ -12,7 +12,7 @@ help() {
 export FUNCTION_DIRECTORY="$HOME/.alien/functions"
 export HERE=$(exec 2>/dev/null;cd -- $(dirname "$0"); unset PWD; /usr/bin/pwd || /bin/pwd || pwd)
 
-CMD_LIST=("cat" "delete" "edit" "list" "new")
+CMD_LIST=("cat" "delete" "edit" "list" "new" "move")
 
 
 # -------------------

@@ -44,10 +44,15 @@ if [[ -f $FUNCTION_PATH ]]; then
 fi
 
 touch $FUNCTION_PATH
-echo -e '#!/usr/bin/zsh' >> $FUNCTION_PATH
 echo -e "function $FUNCTION() {" >> $FUNCTION_PATH
+echo -e "# -----------------------------------" >> $FUNCTION_PATH
+echo -e "#  Write your new function below" >> $FUNCTION_PATH
+echo -e "# -----------------------------------" >> $FUNCTION_PATH
 echo -e "   " >> $FUNCTION_PATH
+echo -e "   " >> $FUNCTION_PATH
+echo -e "   " >> $FUNCTION_PATH
+echo -e "# -----------------------------------" >> $FUNCTION_PATH
 echo -e "}" >> $FUNCTION_PATH
-vim +3 $FUNCTION_PATH
+vim +6 $FUNCTION_PATH
 
 echo "Function $FUNCTION created! type [[ alien-source ]] to enable."
