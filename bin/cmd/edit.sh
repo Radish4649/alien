@@ -14,7 +14,7 @@ Usage:
     alien edit <function>
 
 ACTIONS
-    function    name of function to display
+    function    name of function to edit
 "
 }
 

@@ -14,7 +14,7 @@ Usage:
     alien new <function>
 
 ACTIONS
-    function    name of function to display
+    function    name of function to create
 "
 }
 
