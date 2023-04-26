@@ -1,4 +1,6 @@
-```
+# ALIEN
+
+```ascii
  ________  ___       ___  _______   ________      
 |\   __  \|\  \     |\  \|\  ___ \ |\   ___  \    
 \ \  \|\  \ \  \    \ \  \ \   __/|\ \  \\ \  \   
@@ -29,25 +31,27 @@ COMMANDS:
 ## Requirements
 
 To ensure alien runs smoothly, ensure you have the latest versions of the following applications:
+
 - zsh
+
 - vim
 
 ## installation
 
-- clone the git repository 
+- clone the git repository
 
-```
+```shell
 git clone git@github.com:Radish4649/alien.git
 ```
 
 - run the installation script
 
-```
+```shell
 ./alien-install.sh
 ```
 
 - verify the installation is successful
 
-```
+```shell
 alien help
 ```
