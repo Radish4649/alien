@@ -47,6 +47,7 @@ git clone git@github.com:Radish4649/alien.git
 - run the installation script
 
 ```shell
+cd alien
 ./alien-install.sh
 ```
 
