@@ -1,4 +1,4 @@
-#!/usr/bin/zsh
+#!/bin/zsh
 FUNCTION_DIRECTORY="$HOME/.alien/functions"
 
 [[ $ZSH_EVAL_CONTEXT =~ :file$ ]] && FILE_WAS_SOURCED="true"

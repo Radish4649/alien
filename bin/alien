@@ -1,4 +1,4 @@
-#!/usr/bin/zsh
+#!/bin/zsh
 # -------------------
 #   HELP
 # -------------------
@@ -19,7 +19,7 @@ CMD_LIST=("cat" "delete" "edit" "list" "new" "move")
 #   COMMAND SETTING
 # -------------------
 if [[ $1 == "help" && " ${CMD_LIST[*]} " =~ " $2 " ]]; then
-    /usr/bin/zsh "$HERE/cmd/$2.sh" "help"
+    /bin/zsh "$HERE/cmd/$2.sh" "help"
     exit 0
 elif [[ ! " ${CMD_LIST[*]} " =~ " $1 " ]]; then
     help && exit 1
@@ -32,4 +32,4 @@ shift
 #   COMMAND
 # -------------------
 
-/usr/bin/zsh "$HERE/cmd/$COMMAND.sh" "$@"
+/bin/zsh "$HERE/cmd/$COMMAND.sh" "$@"
